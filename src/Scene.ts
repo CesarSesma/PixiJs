@@ -1,4 +1,4 @@
-import { AnimatedSprite, Container, Texture } from "pixi.js";
+import { AnimatedSprite, Container, Graphics, Texture, Text, NineSlicePlane } from "pixi.js";
 import { GokuKame } from "./GokuKame";
 
 export class Scene extends Container {
@@ -37,6 +37,39 @@ export class Scene extends Container {
         vegetaAnimated.play();
         vegetaAnimated.animationSpeed = 0.2;
         this.addChild(vegetaAnimated);
+
+        const myGraph: Graphics = new Graphics();
+
+        myGraph.clear();
+
+        myGraph.lineStyle({color: 0xFF00FF, width: 10, alpha: 1});
+        myGraph.beginFill(0x00FF00,1);
+        myGraph.drawCircle(0,0,100);
+        myGraph.endFill();
+        myGraph.drawCircle(50,50,100)
+
+        myGraph.position.set(1280/2, 720/2);
+        this.addChild(myGraph);
+
+        // texto
+        const myText: Text = new Text("Hello World", {fontSize: 150, fill: 0xFF0000, fontFamily: "Comic Sans MS"});
+        myText.text = "asasasa";
+        myText.position.x = 500;
+        myText.angle = 75;
+        myText.scale.set(1);
+        this.addChild(myText);
+     
+        // Nine-slice Plane
+        const panel = new NineSlicePlane(
+            Texture.from("Panel"),
+            35,35,35,35
+        );
+        this.addChild(panel);
+        panel.width = 500;
+        panel.height= 300;
+        panel.scale.set(2);
+        panel.position.set(100,100);
+
 
     }
 
