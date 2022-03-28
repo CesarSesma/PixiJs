@@ -1,5 +1,5 @@
 export const assets = [
-    {url:"./goku.png", name:"Goku"},
+  /*  {url:"./goku.png", name:"Goku"},
     {url:"./nube.png", name:"Nube"},
     {url:"./kamehameOri.png", name:"Kame"},
 
@@ -26,9 +26,14 @@ export const assets = [
     {url:"./Dragon-Ball-Super-4-0/Dragon-Ball-Super-4-20.png", name:"Vegeta20"},
     {url:"./Dragon-Ball-Super-4-0/Dragon-Ball-Super-4-21.png", name:"Vegeta21"},
     {url:"./Dragon-Ball-Super-4-0/Dragon-Ball-Super-4-22.png", name:"Vegeta22"},
-    {url:"./Dragon-Ball-Super-4-0/Dragon-Ball-Super-4-23.png", name:"Vegeta23"},
+    {url:"./Dragon-Ball-Super-4-0/Dragon-Ball-Super-4-23.png", name:"Vegeta23"},*/
 
-    {url:"./UI/wood-601830.png", name:"Panel"},
+    {url:"./UI/panel.png", name:"Panel"},
+    {url:"./UI/levelup.png", name:"Levelup"},
+    {url:"./UI/estrella.png", name:"Estrella"},
+    {url:"./UI/premio.png", name:"Premio"},
+    {url:"./UI/barra.png", name:"Barra"},
+
 ];
 
 
