@@ -1,5 +1,5 @@
 import { Container, Graphics, Text, Texture, NineSlicePlane } from "pixi.js";
-import { GokuKame } from "./GokuKame";
+import { GokuKame } from "../game/GokuKame";
 
 export class Scene extends Container {
     constructor(){
